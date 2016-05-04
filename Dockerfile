@@ -25,5 +25,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN echo "opcache.enable=1" >> /etc/php/7.0/mods-available/opcache.ini \
     && echo "opcache.enable_cli=1" >> /etc/php/7.0/mods-available/opcache.ini \
 	&& echo "date.timezone = UTC" >> /etc/php/7.0/cli/php.ini
+	
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 EXPOSE 8000-8080
