@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	  php7.0-mcrypt \
 	  php7.0-mysql \
 	  php7.0-pgsql \
-	  php7.0-memcached \
+	  php-memcached \
 	  php7.0-mbstring \
 	  php7.0-zip \
 	  php7.0-xml \
